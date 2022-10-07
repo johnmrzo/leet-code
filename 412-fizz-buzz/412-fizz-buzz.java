@@ -3,15 +3,22 @@ class Solution {
         ArrayList<String> result = new ArrayList<String>(n);
         
         for (int i = 1; i <= n; i++) {
-            if (i % 3 == 0 && i % 5 == 0) {
-                result.add("FizzBuzz");
-            } else if (i % 3 == 0) {
-                result.add("Fizz");
-            } else if (i % 5 == 0) {
-                result.add("Buzz");
-            } else {
-                result.add(Integer.toString(i));
+            
+            String current = "";
+            
+            if (i % 3 == 0) {
+                current += "Fizz";
+            } 
+            
+            if (i % 5 == 0) {
+                current += "Buzz";
+            } 
+            
+            if (current.isEmpty()) {
+                current += Integer.toString(i);
             }
+            
+            result.add(current);
         }
         return result;
     }
