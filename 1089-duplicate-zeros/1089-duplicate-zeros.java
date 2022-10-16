@@ -2,7 +2,7 @@ class Solution {
     private void shiftToRight(int[] arr,int ind) {
         for (int i = arr.length - 1; i >= ind; i--) {
             if (i > 0) {
-                arr[i] = arr[i - 1]; 
+                arr[i] = arr[i - 1];
             }
         }
         return;
