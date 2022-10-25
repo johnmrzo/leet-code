@@ -1,13 +1,13 @@
 class Solution(object):
     def arrayStringsAreEqual(self, word1, word2):
-        w1 = ""
+        word1Combined = ""
         for w in word1:
-            w1 += w
+            word1Combined += w
             
-        w2 = ""
+        word2Combined = ""
         for w in word2:
-            w2 += w
+            word2Combined += w
             
-        return w1 == w2
+        return word1Combined == word2Combined
         
         
